@@ -1,4 +1,5 @@
-import { Hero, Navbar } from "../components"
+import { Hero, Navbar, Rows } from "../components"
+import { requests, title } from "../services"
 import "../styles/Homepage.css"
 
 const Homepage = () => {
@@ -6,7 +7,10 @@ const Homepage = () => {
     <div className="homeScreen">
       <Navbar/>
       <Hero/>
-      {/* Rows */}
+      <Rows 
+        title={title.netflixOriginals} 
+        fetchUrl={requests.fetchNetflixOriginals}
+      />
     </div>
   )
 }

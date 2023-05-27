@@ -19,24 +19,24 @@ nav {
 .nav__content {
     display: flex;
     justify-content: space-between;
+
+    .nav__logo {
+        position: fixed;
+        top: 10px;
+        left: 0;
+    
+        width: 5rem;
+        object-fit: contain;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    .nav__avatar{
+        position: fixed;
+    
+        right: 20px;
+        width: 30px;
+    
+        cursor: pointer;
+    }
 }
 
-.nav__logo {
-    position: fixed;
-    top: 10px;
-    left: 0;
-
-    width: 5rem;
-    object-fit: contain;
-    padding-left: 20px;
-    cursor: pointer;
-}
-
-.nav__avatar{
-    position: fixed;
-
-    right: 20px;
-    width: 30px;
-
-    cursor: pointer;
-}
