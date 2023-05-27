@@ -28,8 +28,6 @@ export default function Rows({ title, fetchUrl, isLargeRow = false }: Prop) {
       <h2>{title}</h2>
       <div className="row__posters"> 
         {movies?.map((movie) => (
-          isLargeRow && movie.poster_path ||
-          !isLargeRow && movie.backdrop_path && (     
             <img
               className={`row__poster ${isLargeRow && 'row__posterLarge'}`}
               key={movie.id}
@@ -39,7 +37,6 @@ export default function Rows({ title, fetchUrl, isLargeRow = false }: Prop) {
                 }`}
               alt={movie.original_name}
             />
-          )
         ))}
       </div>
     </div>
