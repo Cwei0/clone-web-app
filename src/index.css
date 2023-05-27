@@ -25,6 +25,7 @@ body {
 }
 
 #root {
+  background-color: #111;
   overflow: hidden;
   transition: 0.5s ease-in-out;
 }
