@@ -10,28 +10,13 @@ const Homepage = () => {
       <Rows
         title={title.netflixOriginals}
         fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow = {true}
+        isLargeRow={true}
       />
-      <Rows 
-        title={title.trending} 
-        fetchUrl={requests.fetchTrending} 
-      />
-      <Rows 
-        title={title.topRated} 
-        fetchUrl={requests.fetchTopRated} 
-      />
-      <Rows 
-        title={title.actionMovies} 
-        fetchUrl={requests.fetchActionMovies} 
-      />
-      <Rows 
-        title={title.comedyMovies} 
-        fetchUrl={requests.fetchComedyMovies} 
-      />
-      <Rows 
-        title={title.horrorMovies} 
-        fetchUrl={requests.fetchHorrorMovies} 
-      />
+      <Rows title={title.trending} fetchUrl={requests.fetchTrending} />
+      <Rows title={title.topRated} fetchUrl={requests.fetchTopRated} />
+      <Rows title={title.actionMovies} fetchUrl={requests.fetchActionMovies} />
+      <Rows title={title.comedyMovies} fetchUrl={requests.fetchComedyMovies} />
+      <Rows title={title.horrorMovies} fetchUrl={requests.fetchHorrorMovies} />
       <Rows
         title={title.romanceMovies}
         fetchUrl={requests.fetchRomanceMovies}

@@ -1,6 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import postcssNested from 'postcss-nested'
+import { defineConfig } from "vite"
+import react from "@vitejs/plugin-react"
+import postcssNested from "postcss-nested"
+import autoPrefixer from "autoprefixer"
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,7 +12,8 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [ 
-        postcssNested()
+        postcssNested(),
+        autoPrefixer()
       ]
     }
   },

@@ -26,17 +26,17 @@ export default function Rows({ title, fetchUrl, isLargeRow = false }: Prop) {
   return (
     <div className="row">
       <h2>{title}</h2>
-      <div className="row__posters"> 
+      <div className="row__posters">
         {movies?.map((movie) => (
-            <img
-              className={`row__poster ${isLargeRow && 'row__posterLarge'}`}
-              key={movie.id}
-              src={`
+          <img
+            className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+            key={movie.id}
+            src={`
                 https://image.tmdb.org/t/p/original${
                   isLargeRow ? movie.poster_path : movie.backdrop_path
                 }`}
-              alt={movie.original_name}
-            />
+            alt={movie.original_name}
+          />
         ))}
       </div>
     </div>

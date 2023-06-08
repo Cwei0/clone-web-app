@@ -2,6 +2,7 @@
 :root {
   --font-family: 'Inter', sans-serif;
   --line-height: 1.5;
+  --netflix-red: #e50914;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
